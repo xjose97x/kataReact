@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
   devtool: '#source-map',
   entry: {
-    main: path.join(__dirname, 'app/index.js')
+    main: path.join(__dirname, 'src/index.js')
   },
   output: {
     publicPath: '/',
@@ -27,7 +27,7 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader?cacheDirectory',
         include: [
-          path.join(__dirname, 'app')
+          path.join(__dirname, 'src')
         ],
         exclude: /node_modules/
       },
@@ -35,8 +35,8 @@ module.exports = {
         test: /\.(ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
         loader: 'url-loader',
         options: {
-            name: 'assets/[hash].[ext]',
-            limit: 10000,
+          name: 'assets/[hash].[ext]',
+          limit: 10000
         }
       },
       {
