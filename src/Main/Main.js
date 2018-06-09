@@ -11,7 +11,7 @@ class Main extends Component {
       <div className="container">
         <p className="App-intro">
           El ejercicio consiste en recorrer un array en espiral de izquierda a derecha, 
-          se deben realizar test de lo que se crea necesario del código con jest.
+          se deben realizar test de lo que se crea necesario del código con JEST.
           Para poder realizar el ejercicio es necesario:
         </p>
         
@@ -20,9 +20,7 @@ class Main extends Component {
           <li>Imprimir el output requerido</li>
         </ol>
         
-        <p>Ejemplo:</p>
-        
-        <img src="/assets/example.png"/>
+        <img className="example" src="/assets/example.png"/>
       </div>
     );
   }
