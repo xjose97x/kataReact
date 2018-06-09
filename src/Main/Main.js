@@ -6,6 +6,14 @@ class Main extends Component {
     this.state = {};
   }
 
+  transpose = (matrix) => matrix[0].map((column, i) => matrix.map(row => row[i]));
+  spiral(matrix, prevResult) {
+    if(matrix.length === 1){
+      return prevResult + ' ' + matrix[0].join(' ');
+    }
+    return (this.spiral(this.transpose(matrix.slice(1, matrix.length)).reverse(), !prevResult ? matrix[0].join(' ') :  prevResult + ' ' + matrix[0].join(' ')));
+  };
+
   render() {
     return (
       <div className="container">
