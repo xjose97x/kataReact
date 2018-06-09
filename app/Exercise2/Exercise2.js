@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Encryption extends Component {
+class Exercise2 extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -9,10 +9,10 @@ class Encryption extends Component {
   render() {
     return (
       <div className="container">
-        Encryption page
+        Exercise2 page
       </div>
     );
   }
 }
 
-export default Encryption;
+export default Exercise2;

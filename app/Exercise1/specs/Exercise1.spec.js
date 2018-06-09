@@ -1,16 +1,13 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import Line from '../Line';
+import Exercise1 from '../Exercise1';
 
-describe('Line', () => {
+describe('Exercise1', () => {
   let component;
   let instance;
-  let props;
   
   beforeEach(() => {
-    props = {};
-
-    component = shallow(<Line {...props}/>);
+    component = shallow(<Exercise1/>);
     instance = component.instance();
   });
   

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export class Alphabet extends Component {
+export class Exercise1 extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -8,9 +8,11 @@ export class Alphabet extends Component {
   
   render() {
     return (
-      <span>This is a line</span>
+      <div className="container">
+        Exercise1 page
+      </div>
     );
   }
 }
 
-export default Alphabet;
+export default Exercise1;
