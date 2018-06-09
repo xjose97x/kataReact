@@ -4,7 +4,7 @@ import Link from 'react-router-dom/Link';
 class Topbar extends Component {
   constructor(props) {
     super(props);
-    this.state = {title: 'Corregir'};
+    this.state = {title: 'Cambiar titulo'};
   }
   
   render() {

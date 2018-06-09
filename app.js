@@ -7,7 +7,7 @@ import morgan from 'morgan';
 import express from 'express';
 import bodyParser from 'body-parser';
 import webpack from 'webpack';
-import webpackDevServer from 'webpack-dev-server';
+import WebpackDevServer from 'webpack-dev-server';
 
 require('dotenv').config();
 
@@ -24,7 +24,7 @@ if (!port) {
 let config = require('./webpack.config.dev');
 let compiler = webpack(config);
 let devPort = process.env.DEV_PORT;
-let devServer = new webpackDevServer(compiler, config.devServer);
+let devServer = new WebpackDevServer(compiler, config.devServer);
 
 devServer.listen(devPort, () => {
   console.log('webpack-dev-server is listening on port', devPort);
@@ -32,7 +32,7 @@ devServer.listen(devPort, () => {
 
 app.use(morgan('dev'));
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
