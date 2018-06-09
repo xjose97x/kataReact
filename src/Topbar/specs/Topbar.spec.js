@@ -25,6 +25,6 @@ describe('Topbar', () => {
   });
   
   it('should instance state with correct params', () => {
-    expect(instance.state).toEqual({title: 'Ejercicio'});
+    expect(instance.state).toEqual({title: 'Main'});
   });
 });
