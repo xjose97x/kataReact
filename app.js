@@ -35,7 +35,7 @@ app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use('/', express.static(path.join(__dirname, '..', 'public')));
+app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 app.get('*', (req, res) => {
   let context = {};

@@ -9,11 +9,13 @@ class Topbar extends Component {
   
   render() {
     return (
-      <ul>
-        <li><Link to="/">{this.state.title}</Link></li>
-        <li><Link to="/">Exercise1</Link></li>
-        <li><Link to="/">Exercise2</Link></li>
-      </ul>
+      <div className="topBar">
+        <ul>
+          <li><Link to="/">{this.state.title}</Link></li>
+          <li><Link to="/">Exercise1</Link></li>
+          <li><Link to="/">Exercise2</Link></li>
+        </ul>
+      </div>
     );
   }
 }

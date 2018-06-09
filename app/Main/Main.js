@@ -15,14 +15,14 @@ class Main extends Component {
           Para poder realizar el ejercicio es necesario:
         </p>
         
-        <ul>
-          <li>1.- Crear e imprimir el array original de dos dimensiones nxn</li>
-          <li>2.- Imprimir el output requerido</li>
-        </ul>
+        <ol>
+          <li>Crear e imprimir el array original de dos dimensiones nxn</li>
+          <li>Imprimir el output requerido</li>
+        </ol>
         
         <p>Ejemplo:</p>
         
-        <img src=""/>
+        <img src="/assets/example.png"/>
       </div>
     );
   }
